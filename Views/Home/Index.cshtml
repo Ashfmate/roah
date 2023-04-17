@@ -1,0 +1,257 @@
+﻿<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roah</title>
+    <link rel="stylesheet" href="~/font/all.min.css"/>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css"/>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="~/css/style.css"/>
+    </head>
+<body class="fixed">
+    <section class="my-2 p-2 text-white login" id="log-in">
+      <div class="container d-flex justify-content-center px-5">
+        <div class="card bg-warning p-4 rounded position-relative">
+          <div class="d-flex justify-content-center mb-4">
+            <h1 class="text-center">تسجيل دخول</h1>
+          </div>
+          <i class="line"></i>
+          <form class="lead px-2">
+            <div class="form-group position-relative">
+              <label for="username" class="my-2">اسم المستخدم</label>
+              <i class="far fa-user icons"></i>
+              <input
+                type="text"
+                class="form-control"
+                id="username"
+                placeholder="اسم المستخدم"
+              />
+            </div>
+            <div class="form-group position-relative">
+              <label for="pass" class="my-2">كلمة المرور</label>
+              <i class="fa fa-lock icons"></i>
+              <input
+                type="password"
+                class="form-control"
+                id="pass"
+                placeholder="كلمة المرور"
+              />
+            </div>
+            <div>
+              <input type="checkbox" class="form-check-input my-2" />
+              <label for="" class="form-check-label my-1">تذكرني</label>
+            </div>
+            <button type="submit" class="btn btn-primary px-4 my-2" >تأكيد
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+     <main id="opacity">
+      <header class="navabr navbar-expand-lg bg-warning text-white fixed-top">
+        <div class="container d-flex justify-content-between">
+          <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item" onclick="openfunction()">
+                <a href="#" class="nav-link">تسجيل الدخول</a>
+              </li>
+            </ul>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navmenu"
+          > 
+            <i class="fa-solid fa-bars-staggered fa-3x icone"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navmenu">
+            <ul class="navbar-nav ms-auto afectNav">
+              <li class="nav-item mx-4 h5 act">
+                <a href="#" class="nav-link">الرئيسة</a>
+              </li>
+              <li class="nav-item mx-4 h5 double-5">
+                <a href="#" class="nav-link">أعمالنا</a>
+              </li>
+              <li class="nav-item mx-4 h5 double-5">
+                <a href="#about-us" class="nav-link">عن روح</a>
+              </li>
+              <li class="nav-item mx-4 h5 double-5">
+                <a href="#view" class="nav-link">رؤيتنا</a>
+              </li>
+              <li class="nav-item mx-4 h5 double-5">
+                <a href="#sponsores" class="nav-link">الدعم</a>
+              </li>
+              <li class="nav-item mt-5 h5 d-lg-none">
+                <a href="#" class="nav-link">تسجيل الدخول</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <img src="img/roah.png" alt="" width="67%" />
+          </div>
+        </div>
+      </header>
+      <section
+        class="p-5 text-white main"
+        style="background: url(img/10df_6.jpg) no-repeat"
+      >
+        <div class="container">
+          <h1 class="pb-2">
+            لتزرع <span class="text-warning">الأمل معنا</span>
+          </h1>
+          <h3 class="pb-3">كن أحد المتطوعين وأصنع الابتسامة</h3>
+          <button class="btn btn-dark px-5">تبرع الأن</button>
+        </div>
+      </section>
+
+      <section class="p-5 text-light bg-warning height" id="about-us">
+        <div class="container">
+          <div class="row align-items-center g-3">
+            <div class="col-sm-2">
+              <img src="img/roah.png" alt="" />
+            </div>
+
+            <div class="col-10">
+              <h3 class="mb-2">من روح ؟</h3>
+              <p class="lead">
+                مبادرة شبابية غير ربحية تهدف الى الدعم المعنوي والمادي وتأسست
+                هذه المبادرة في عام 2016 وتعمل ضمن دعم مادي داخلي ممن أعضاء
+                المبادرة وقامت بالكثير من النزولات الى مختلف المستشفيات ودار
+                الايتام لزرع الابتسامة وقامت هذه المبادرة ضمن كادر مختص من
+                المصورين ولديها الكثير من المخططات المستقبلية الواضحة.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="p-5 m-5 text-dark height" id="view">
+        <div class="container">
+          <div class="row align-items-center g-3 justify-content-between">
+            <div class="col-8 lead">
+              <h3 class="card-title mb-2">رؤيتنا</h3>
+              <p class="lead">
+                مبادرة شبابية غير ربحية تهدف الى الدعم المعنوي والمادي وتأسست
+                هذه المبادرة في عام 2016 وتعمل ضمن دعم مادي داخلي ممن أعضاء
+                المبادرة وقامت بالكثير من النزولات الى مختلف المستشفيات ودار
+                الايتام لزرع الابتسامة وقامت هذه المبادرة ضمن كادر مختص من
+                المصورين ولديها الكثير من المخططات المستقبلية الواضحة.
+              </p>
+            </div>
+            <div class="col-md-4">
+              <img src="img/p5.jpg" alt="" width="100%">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="p-5 text-white height visit main"
+        data-ride="carousel"
+        style="background: url(img/10df_6.jpg) no-repeat"
+      >
+        <div class="container">
+          <h1 class="mb-3 h1">نزول دار الشوكاني</h1>
+          <p class="lead h-50 w-75">
+            مبادرة شبابية غير ربحية تهدف الى الدعم المعنوي والمادي وتأسست هذه
+            المبادرة في عام 2016 وتعمل ضمن المبادرة وقامت بالكثير من النزولات
+            الى مختلف المستشفيات ودار الايتام لزرع الابتسامة وقامت..
+          </p>
+          <a
+            href="#"
+            class="btn btn-ligh text-white p-2 border-1 border-white border"
+            >للمزيد...</a
+          >
+        </div>
+      </section>
+      <section class="p-5 m-5 text-dark height" id="view">
+        <div class="container">
+          <div class="row align-items-center g-3 justify-content-between">
+            <div class="col-8 lead">
+              <h3 class="card-title mb-2">رؤيتنا</h3>
+              <p class="lead">
+                مبادرة شبابية غير ربحية تهدف الى الدعم المعنوي والمادي وتأسست
+                هذه المبادرة في عام 2016 وتعمل ضمن دعم مادي داخلي ممن أعضاء
+                المبادرة وقامت بالكثير من النزولات الى مختلف المستشفيات ودار
+                الايتام لزرع الابتسامة وقامت هذه المبادرة ضمن كادر مختص من
+                المصورين ولديها الكثير من المخططات المستقبلية الواضحة.
+              </p>
+            </div>
+            <div class="col-sm-4 slideshow-container">
+              <!-- Slideshow container -->
+              <div class="slideshow-container">
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                    <img src="img/p5.jpg"alt="" class="rounded-3 align-self-center" width="100%" />
+                  <div class="text">Caption Text</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="img/10df_6.jpg"alt="" class="rounded-3 align-self-center" width="100%" />
+                  <div class="text">Caption Two</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="/img/p5.jpg"alt="" class="rounded-3 align-self-center" width="100%" />
+                  <div class="text">Caption Three</div>
+                </div>
+              </div>
+              <br />
+
+              <!-- The dots/circles -->
+              <div style="text-align: center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="p-5" id="sponsores">
+        <div class="container">
+          <h1 class="text-center mb-5 lead sponsors">الداعمين</h1>
+          <div class="row text-center g-4">
+            <div class="col-md">
+              <img src="img/Aljeel.jpg" alt="" width="50%" class="rounded-4" />
+              <h2 class="my-3 text-warning">مكتبة الجيل الجديد</h2>
+              <p class="lead">الرائدة في القرطاسية والأدوات المكتبية</p>
+              <a href=""> <i class="fab fa-whatsapp mx-2 text-warning"></i></a>
+              <a href=""> <i class="fab fa-instagram mx-2 text-success"></i></a>
+              <a href=""> <i class="fab fa-facebook-f mx-2"></i></a>
+            </div>
+            <div class="col-md">
+              <img src="img/Aljeel.jpg" alt="" width="50%" class="rounded-4" />
+              <h2 class="my-3 text-warning">مكتبة الجيل الجديد</h2>
+              <p class="lead">الرائدة في القرطاسية والأدوات المكتبية</p>
+              <a href=""> <i class="fab fa-whatsapp mx-2 text-warning"></i></a>
+              <a href=""> <i class="fab fa-instagram mx-2 text-success"></i></a>
+              <a href=""> <i class="fab fa-facebook-f mx-2"></i></a>
+            </div>
+            <div class="col-md">
+              <img src="img/Aljeel.jpg" alt="" width="50%" class="rounded-4" />
+              <h2 class="my-3 text-warning">مكتبة الجيل الجديد</h2>
+              <p class="lead">الرائدة في القرطاسية والأدوات المكتبية</p>
+              <a href=""> <i class="fab fa-whatsapp mx-2 text-warning"></i></a>
+              <a href=""> <i class="fab fa-instagram mx-2 text-success"></i></a>
+              <a href=""> <i class="fab fa-facebook-f mx-2"></i></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="bg-warning">
+        <div class="container">
+          <div class="d-flex justify-content-center">
+            <img src="img/roah.png" alt="" width="5%" />
+          </div>
+          <p class="text-center">جميع الحقوق محفوظة لدى مطويريها</p>
+        </div>
+         </footer>
+    </main>
+  </body>
+  <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="~/js/script.js">
+  </script>
+</html>
